@@ -1,11 +1,11 @@
 services:
   apache:
-    build: apache/.
+    build: apache
     container_name: apache
     ports:
       - "80:80"
     volumes:
-      - ./public:/var/www/html/
+      - ../public:/var/www/html/
   mariadb:
     image: mariadb:latest
     container_name: mariadb
@@ -19,6 +19,12 @@ services:
     restart: always
     volumes:
       - mariadb_data:/var/lib/mysql
+  bind9:
+    build: bind
+    container_name: bind9
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
 
 volumes:
   mariadb_data:
