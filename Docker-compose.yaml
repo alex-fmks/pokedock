@@ -17,6 +17,11 @@ services:
     ports:
       - "3306:3306"
     restart: always
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+volumes:
+  mariadb_data:
 #    adminer:
 #      image: adminer
 #      restart: always
