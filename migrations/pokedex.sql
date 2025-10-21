@@ -8,3 +8,7 @@ create table pokemons
     name varchar(255),
     caught varchar(255)
 );
+
+INSERT INTO pokemons(name, caught)
+VALUES('pickachu', 'today'),
+      ('shiggy', 'today')
