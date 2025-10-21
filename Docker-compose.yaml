@@ -16,9 +16,10 @@ services:
       MYSQL_PASSWORD: lifehouse204
     ports:
       - "3306:3306"
-  #  adminer:
-  #    image: adminer
-  #    restart: always
-  #    ports:
-  #      - "8080:8080"
+    restart: always
+#    adminer:
+#      image: adminer
+#      restart: always
+#      ports:
+#        - "8080:8080"
 
