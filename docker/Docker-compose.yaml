@@ -1,6 +1,6 @@
 services:
   apache:
-    build: ./
+    build: apache/.
     container_name: apache
     ports:
       - "80:80"
