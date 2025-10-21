@@ -15,7 +15,7 @@ services:
       MYSQL_USER: alexfmks
       MYSQL_PASSWORD: lifehouse204
     ports:
-      - "3307:3306"
+      - "3306:3306"
     restart: always
 #    adminer:
 #      image: adminer
