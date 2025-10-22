@@ -8,5 +8,5 @@
 FROM php:8.3-apache
 
 RUN docker-php-ext-install pdo pdo_mysql
-FROM httpd:latest
-COPY ./httpd.conf /usr/local/apache2/conf/httpd.conf
+
+COPY pokemon.conf /etc/apache2/sites-available
