@@ -19,12 +19,12 @@ services:
     restart: always
     volumes:
       - mariadb_data:/var/lib/mysql
-  bind9:
-    build: bind
-    container_name: bind9
-    ports:
-      - "53:53/udp"
-      - "53:53/tcp"
+#  bind9:
+#    build: bind
+#    container_name: bind9
+#    ports:
+#      - "53:53/udp"
+#      - "53:53/tcp"
 
 volumes:
   mariadb_data:
