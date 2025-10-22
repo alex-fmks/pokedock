@@ -1,0 +1,77 @@
+body {
+    background-color: #f3f3f3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5rem;
+}
+
+
+.paragraph, ul {
+    line-height: 1.35rem;
+}
+
+/* Kompakte Variante */
+.table--compact td,
+.table--compact th{
+    padding: 8px 10px;
+    font-size: 0.92rem;
+}
+
+/* Kleine Bildschirme: Kopfzeile bleibt, Tabelle scrollbar */
+@media (max-width: 520px){
+    .table caption{ padding-left: 12px; padding-right: 12px; }
+    .table thead th, .table td, .table th{ padding-left: 12px; padding-right: 12px; }
+}
+
+.nav {
+    display: flex;
+}
+
+:root {
+    --poke-blue: #3b4cca; /* Indigo - Kanto/Logo */
+    --poke-red: #d81e3b; /* Akzent */
+    --poke-yellow: #ffcb05; /* Pikachu */
+    --bg: linear-gradient(180deg, #f6f8ff 0%, #eef2ff 100%);
+    --card-bg: rgba(255, 255, 255, 0.85);
+    --glass: rgba(255, 255, 255, 0.6);
+    --muted: #556;
+    --radius: 14px;
+    --shadow: 0 8px 24px rgba(59, 76, 202, 0.14);
+    --accent-shadow: 0 6px 18px rgba(216, 30, 59, 0.14);
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background: var(--bg);
+    color: #0b1220;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 3rem 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 20px;
+    margin: 0;
+    color: var(--poke-blue);
+    letter-spacing: 1px
+}
