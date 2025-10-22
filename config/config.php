@@ -1,7 +1,7 @@
 <?php
 
-$host = 'localhost'; // oder IP deiner Datenbank
-$dbname = 'pokemon';
+$host = 'mariadb'; // oder IP deiner Datenbank
+$dbname = 'pokedex';
 $user = 'alexfmks';
 $pass = 'lifehouse204';
 
