@@ -5,7 +5,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ../public:/var/www/html/
+      - ../:/var/www/pokedock
   mariadb:
     image: mariadb:latest
     container_name: mariadb
