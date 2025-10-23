@@ -1,5 +1,5 @@
 <?php
-require_once '../config/config.php';
+require_once '../config/loader.php';
 $request = explode('/', $_SERVER["REQUEST_URI"]);
 $entity = $request[1] ?? '';
 $method = $request[2] ?? '';
@@ -24,7 +24,7 @@ switch ($entity) {
                 require_once('../src/pokemon/delete.php');
                 break;
             case 'item':
-                require_once('../src/pokemon/item.php');
+                require_once('../src/pokemon/show.php');
                 break;
             default:
                 echo '404';
@@ -39,7 +39,7 @@ switch ($entity) {
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <title>Pokémon CSS Theme — Beispielseite</title>
+    <title>Pokémon</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@300;400;600&display=swap"
           rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">

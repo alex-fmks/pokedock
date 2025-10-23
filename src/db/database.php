@@ -1,9 +1,9 @@
 <?php
 
 
-function dbcon(string $host = DB_HOST, string $dbname = DB_NAME, string $dbuser = DB_USER, string $dbpass = DB_PW): PDO
+function dbcon(string $host = DB_HOST, string $dbname = DB_NAME, string $user = DB_USER, string $pass = DB_PW): PDO
 {
-    $conn = new PDO("mysql:host=$host;dbname=$dbname", $dbuser, $dbpass);
+    $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
     return $conn;
 }
 
