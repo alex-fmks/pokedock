@@ -1,5 +1,5 @@
 <?php
-function department_show_view(array $data): string
+function pokemon_show_view(array $data): string
 {
     $string = "<div> {$data['name']} </div>";
     $string .= "<div> {$data['id']}</div>";
