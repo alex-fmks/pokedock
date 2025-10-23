@@ -23,7 +23,7 @@ switch ($entity) {
             case 'delete':
                 require_once('../src/pokemon/delete.php');
                 break;
-            case 'item':
+            case 'show':
                 require_once('../src/pokemon/show.php');
                 break;
             default:

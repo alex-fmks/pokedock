@@ -1,7 +1,8 @@
 <?php
-$data = findById($id, 'pokemon');
+$data = findById($id, 'pokemons');
+var_dump($data);
 
 
-require_once '../view/pokemon/show.php';
+require_once 'show.php';
 
 
