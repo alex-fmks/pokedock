@@ -11,21 +11,10 @@ function render(callable $content, array $data): string
     <title>Document</title>
 </head>
 <body>
-<div>
-    <div>Department</div>
-    <div>
-        <ul>
-            <li><a href='/department/create'>create</a></li>
-            <li><a href='/department/read'>show</a></li>
-
-        </ul>
-    </div>
-</div>
-<div>Employees</div>
+<h1>Pokemon Database</h1>
 <div>
     <ul>
-        <li><a href='/employee/create'>create</a></li>
-        <li><a href='/employee/read'>show</a></li>
+        <li><a href='/pokemon/create'>Pokemon gefunden</a></li>
     </ul>
 </div>
 <div>" . $content($data) . "
