@@ -6,5 +6,5 @@ create table pokemons
 (
     id    int auto_increment PRIMARY KEY,
     name varchar(255),
-    caught varchar(255)
+    type varchar(255)
 );

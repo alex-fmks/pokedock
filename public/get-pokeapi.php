@@ -1,5 +1,6 @@
 <?php
 require '../src/db/database.php';
+require '../config/config.php';
 
 
 $curl = curl_init();
@@ -29,7 +30,12 @@ for ($i = 0; $i < $count; $i++) {
 
 $con = dbcon();
 
-//for($i = 0; $i <count($response); $i++){
-//    $con = "INSERT INTO pokemons(name) VALUES()";
-//}
+for($i = 0; $i < $count; $i++){
+    $statement = $con->prepare("INSERT INTO pokemons(name) VALUES(:name)");
+    $name = $responseArray['results'][$i]['name'];
+    $statement->bindParam(':name', $name);
+    $statement->execute();
+}
+
+
 
