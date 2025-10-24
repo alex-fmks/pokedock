@@ -42,10 +42,8 @@ for($i = 0; $i < $count; $i++){
     ));
     $response = curl_exec($curl);
     $responseType = json_decode($response, true);
-    $type1 = $responseType['types'][0]['type']['name'];
-    $type2 = $responseType['types'][1]['type']['name'] ?? 'null';
-    $statement->bindParam(':type', $type1);
-    $statement->bindParam(':type', $type2);
+    $type = $responseType['types'][0]['type']['name'];
+    $statement->bindParam(':type', $type);
     $statement->execute();
 }
 
