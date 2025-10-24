@@ -75,6 +75,7 @@ function create(string $tablename, array $data)  // ['name' => 'bob']
 
 function update(string $tablename, array $data): bool
 {
+    global $id;
     $conn = dbcon();
 //    $stmt = $conn->prepare("DESCRIBE $tablename");
 //    $stmt->execute();
@@ -90,6 +91,7 @@ function update(string $tablename, array $data): bool
     $stmt = $conn->prepare($sql);
 
     change_data($column, $data);
+    $data["id"] = $id;
 
 
     return $stmt->execute($data);
